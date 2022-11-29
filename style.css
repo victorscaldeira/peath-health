@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.primeiro-bloco {
+  height: 600px;
+  width: 100vw;
+
+  background: #ade2ff;
+
+  display: flex;
+}
+
+.lado-esquerdo {
+  height: 100%;
+  width: 100%;
+}
+
+.cachorro-imagem {
+  width: 400px;
+  height: 600px;
+}
+
+.menu {
+
+  height: 56px;
+  display:flex;
+  align-items:center ;
+  justify-content: center;
+  gap: 128px;
+  font-size: 16px;
+}
+
+.menu-item {
+  color: white;
+  font-weight: 600;
+}
+
+.textos {
+  height: calc(100% - 56px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 32px;
+}
+
+.texto-principal {
+  font-size: 48px;
+  width: 450px;
+  color: white;
+}
+
+.texto-clicavel {
+  font-size: 56px;
+  color: #758ecd;
+ }
+.segundo-bloco {
+  height: 600px;
+  width: 100vw; 
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plano-container {
+  width: 351px;
+  height: 100%;
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+}
+.animal-imagem {
+  height: 150px;
+
+} 
+.animal-titulo {
+  font-size: 36px;
+  color: #70cdff;
+} 
+
+.plano-texto {
+  font-size: 20px;
+  line-height: 36px;
+  width: 224px;
+  color: #c4c4c4;
+}
+
+
+ 
+ @media (max-width: 1000px) {
+ .primeiro-bloco{
+  height: 500px;
+ }
+ 
+  .cachorro-imagem {
+   display: none;
+  }
+  
+
+  .menu {
+
+    gap: 32px;
+  }
+  .texto-principal{
+    font-size: 30px;
+    width: 90vw;
+  }
+   .texto-clicavel{
+    font-size: 40px;
+   }
+   
+  
+ .segundo-bloco {
+  flex-direction: column;
+  height: auto;
+  gap: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+ }
+}
+
+
+
